@@ -7,4 +7,8 @@
 //
 // window.ENV = {FEATURES: {'with-controller': true}};
 
-window.ENV = {};
+window.ENV = {
+  phonegap: true,
+  googleApiKey: 'AIzaSyBTRX_V1zOo18otU0zN48UIPXyVxR-yBl4',
+  flickrApiKey: ''
+};

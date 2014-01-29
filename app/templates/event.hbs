@@ -1,0 +1,43 @@
+<div class="article" style="background-color: #fff; padding: 10px;">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>{{model.summary}}</h4>
+
+      <dl>
+        <dt>Beginn</dt>
+        <dd>
+          {{#if model.start.date}}
+            {{nice-date model.start.date}}
+          {{else}}
+            {{nice-date-time model.start.dateTime}}
+          {{/if}}
+        </dd>
+
+        <dt>Ende</dt>
+        <dd>
+          {{#if model.end.date}}
+            {{nice-date model.end.date}}
+          {{else}}
+            {{nice-date-time model.end.dateTime}}
+          {{/if}}
+        </dd>
+
+        {{#if model.location}}
+          <dt>Ort</dt>
+          <dd>
+            {{model.location}}
+          </dd>
+        {{/if}}
+
+
+      </dl>
+
+
+
+    </div>
+  </div>
+
+
+</div>
+

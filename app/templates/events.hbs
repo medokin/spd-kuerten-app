@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="text-center">
+      <span class="opening2"> Termine</span>
+    </div>
+
+    <br/>
+
+    <div class="list-group">
+      {{#each}}
+        {{#link-to 'event' this class='list-group-item'}}
+          {{#if this.start.date}}
+            <b>{{nice-date this.start.date}}</b>
+          {{else}}
+            <b>{{nice-date-time this.start.dateTime}}</b>
+          {{/if}}
+
+          <br/> {{this.summary}} {{/link-to}}
+      {{/each}}
+    </div>
+  </div>
+</div>

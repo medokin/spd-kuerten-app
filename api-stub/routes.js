@@ -1,3 +1,5 @@
+var r = require('request');
+
 module.exports = function(server) {
 
   // Create an API namespace, so that the root does not 
@@ -5,25 +7,8 @@ module.exports = function(server) {
 	server.namespace('/api', function() {
 
 		// Return fixture data for '/api/posts/:id'
-		server.get('/posts/:id', function(req, res) {
-			var post = {
-					  "post": {
-					    "id": 1,
-					    "title": "Rails is omakase",
-					    "comments": ["1", "2"],
-					    "user" : "dhh"
-					  },
-
-					  "comments": [{
-					    "id": "1",
-					    "body": "Rails is unagi"
-					  }, {
-					    "id": "2",
-					    "body": "Omakase O_o"
-					  }]
-					};
-
-			res.send(post);
+		server.get('/news', function(req, res) {
+      r.get('http://spd-kuerten.de/feed/', {timeout: 5000}).pipe(res);
 		});
 
 	});

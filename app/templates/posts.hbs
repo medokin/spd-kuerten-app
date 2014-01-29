@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="text-center">
+      <span class="opening2"> Nachrichten</span>
+    </div>
+
+    <br/>
+
+    <div class="list-group news-list">
+      {{#each}}
+        {{#link-to 'post' this class='list-group-item'}}
+          <img {{bind-attr src=this.thumbnail}} class="img-rounded" >
+          {{this.title}} <br/><small class="pull-right">{{nice-date this.date}}</small>
+        {{/link-to}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+

@@ -1,5 +1,43 @@
-<ul>
-{{#each}}
-  <li>{{this}}</li>
-{{/each}}
-</ul>
+<div class="row">
+  <div class="col-md-12">
+  <img src="img/logo.png" style="display: block;
+margin: 0 auto;">
+    <div class="text-center">
+      <span class="opening2"> Wir arbeiten für Kürten </span>
+    </div>
+
+    <br/>
+
+    <span class="opening"> <span class="glyphicon glyphicon-bullhorn"></span> Neusten Nachrichten </span>
+    <div class="list-group news-list">
+      {{#each rss}}
+        {{#link-to 'post' this class='list-group-item'}}
+          <img {{bind-attr src=this.thumbnail}} class="img-rounded" >
+          {{this.title}} <br/><small class="pull-right">{{nice-date this.date}}</small>
+        {{/link-to}}
+      {{/each}}
+    </div>
+    {{#link-to 'posts' class='btn btn-default'}}Alle Nachrichten{{/link-to}}
+
+    <br/><br/>
+
+    <span class="opening"> <span class="glyphicon glyphicon-calendar"></span> Nächsten Termine </span>
+    <div class="list-group">
+      {{#each events}}
+        {{#link-to 'event' this class='list-group-item'}}
+          {{#if this.start.date}}
+            <b>{{nice-date this.start.date}}</b>
+          {{else}}
+            <b>{{nice-date-time this.start.dateTime}}</b>
+          {{/if}}
+
+          <br/> {{this.summary}} {{/link-to}}
+      {{/each}}
+    </div>
+    {{#link-to 'events' class='btn btn-default'}}Alle Termine{{/link-to}}
+
+
+  </div>
+</div>
+
+<br/><br/>

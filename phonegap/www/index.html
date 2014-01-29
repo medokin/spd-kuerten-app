@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="assets/bc3c372f.app.min.css">
+
+  <script src="phonegap.js"></script>
+
+  <script src="assets/7775c54e.config.min.js"></script>
+
+  <script src="assets/a5abec2b.vendor.min.js"></script>
+
+  <script src="assets/b75dc39d.app.min.js"></script>
+
+</head>
+<body>
+  <!--[if lt IE 8]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.
+    </p>
+  <![endif]-->
+
+  <script>
+
+    window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+    }, false);
+
+    if(typeof window.cordova != "undefined"){
+      window.ENV.plattform = 'phonegap';
+      document.addEventListener('deviceready', run, false);
+    }else{
+      window.ENV.plattform = 'browser';
+      run();
+    }
+
+    function run(){
+      window.App = require('appkit/app')["default"].create();
+    }
+
+
+  </script>
+</body>
+</html>

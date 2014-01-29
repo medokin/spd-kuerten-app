@@ -87,10 +87,14 @@ module.exports = function(grunt) {
                      'clean:dist',
                      'build:dist',
                      'copy:assemble',
-                     'createDistVersion'
+                     'createDistVersion',
+                     'copy:distToWww'
                      ]);
 
-
+  grunt.registerTask('device', "Build and preview a minified & production-ready version of your app.", [
+    'dist',
+    'exec:device'
+  ]);
   // Default Task
   // ------------------
   grunt.registerTask('default', "Build (in debug mode) & test your application.", ['test']);

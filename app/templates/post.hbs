@@ -1,0 +1,23 @@
+<div class="article" style="background-color: #fff; padding: 10px;">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>{{model.title}}</h3>
+
+      <p class="text-right">{{nice-date model.date}}</p>
+
+      <div>
+        <img {{bind-attr src=this.thumbnail}} class="pull-left img-rounded" style="padding: 5px;" alt=""/>
+        {{{model.content}}}
+      </div>
+
+      <br/>
+
+      [{{model.creator}}]
+
+    </div>
+  </div>
+
+
+</div>
+

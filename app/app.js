@@ -1,5 +1,7 @@
 import Resolver from 'resolver';
 
+
+
 var App = Ember.Application.extend({
   LOG_ACTIVE_GENERATION: true,
   LOG_MODULE_RESOLVER: true,

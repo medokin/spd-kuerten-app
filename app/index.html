@@ -5,15 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>App</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <!-- build:css(tmp/result) /assets/app.min.css -->
+  <!-- build:css(tmp/result) assets/app.min.css -->
   <link rel="stylesheet" href="/assets/app.css">
   <!-- endbuild -->
 
-  <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
+  <script src="phonegap.js"></script>
 
-  <!-- build:js(tmp/result) /assets/config.min.js -->
+  <!-- build:js(tmp/result) assets/config.min.js -->
 
     <script src="/config/environment.js"></script>
     <!-- @if tests=false -->
@@ -30,7 +30,7 @@
 
   <!-- endbuild -->
 
-  <!-- build:js(tmp/result) /assets/vendor.min.js -->
+  <!-- build:js(tmp/result) assets/vendor.min.js -->
 
     <script src="/vendor/jquery/jquery.js"></script>
 
@@ -46,10 +46,15 @@
     <script src="/vendor/loader.js"></script>
     <script src="/vendor/ember-resolver/dist/ember-resolver.js"></script>
     <script src="/vendor/ic-ajax/main.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/vendor/fastclick/lib/fastclick.js"></script>
+    <script src="/vendor/string/lib/string.js"></script>
+    <script src="/vendor/moment/min/moment.min.js"></script>
+    <script src="/vendor/moment/lang/de.js"></script>
 
   <!-- endbuild -->
 
-  <!-- build:js(tmp/result) /assets/app.min.js -->
+  <!-- build:js(tmp/result) assets/app.min.js -->
 
     <script src="/assets/app.js"></script>
     <script src="/assets/templates.js"></script>
@@ -99,7 +104,24 @@
 
   <!-- @if tests=false -->
   <script>
-    window.App = require('appkit/app')["default"].create();
+
+    window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+    }, false);
+
+    if(typeof window.cordova != "undefined"){
+      window.ENV.plattform = 'phonegap';
+      document.addEventListener('deviceready', run, false);
+    }else{
+      window.ENV.plattform = 'browser';
+      run();
+    }
+
+    function run(){
+      window.App = require('appkit/app')["default"].create();
+    }
+
+
   </script>
   <!-- @endif -->
 

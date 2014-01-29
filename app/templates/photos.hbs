@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="text-center">
+      <span class="opening2"> Fotos</span>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<div class="row">
+    {{#each}}
+      {{#if this.visible}}
+        <div class="col-xs-4">
+          <a href="http://farm9.staticflickr.com/8377/8573520036_6e9b84f64a_c.jpg"  class="thumbnail">
+            <img {{bind-attr src=this.url_q}}>
+          </a>
+        </div>
+      {{/if}}
+
+    {{/each}}
+</div>
+
+{{#if moreAvailable}}
+  <button class="btn btn-default" style="width: 100%" {{action 'more'}}>Mehr Bilder</button>
+{{/if}}
+
+<br/><br/>
+
+
+
