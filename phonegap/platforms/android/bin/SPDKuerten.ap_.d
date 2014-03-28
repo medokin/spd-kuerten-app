@@ -21,9 +21,9 @@ C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\phonegap.js \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res \
-C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\7660339e.app.min.js \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\7775c54e.config.min.js \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\a5abec2b.vendor.min.js \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\b75dc39d.app.min.js \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\bc3c372f.app.min.css \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\fonts \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\assets\fonts\bootstrap \
@@ -39,7 +39,12 @@ C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\img\icons \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\img\logo.png \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\img\icons\home.png \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\notification.js \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android\notification.js \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon \
@@ -68,6 +73,7 @@ C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon\tizen\icon-128.png \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon\webos\icon-64.png \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon\windows-phone\icon-173-tile.png \
+C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon\windows-phone\icon-173.png \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon\windows-phone\icon-48.png \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\icon\windows-phone\icon-62-tile.png \
 C:\Users\nja\WebstormProjects\spd-kuerten-app\phonegap\platforms\android\assets\www\res\screen\android \
